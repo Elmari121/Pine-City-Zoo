@@ -1,0 +1,286 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*header*/
+#header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 80px;
+    background-image:url('images/wood-bg.png');
+    background-repeat: repeat-x;
+
+}
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 15px;
+}
+/* top tabs*/ 
+#tabs-top{
+    position:fixed;
+    top:80px;
+    left:0px;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+
+}
+#tabs-top a {
+    float: left;
+    display: block;
+    width: 33%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+/*bottom tabs*/
+#tabs-bottom{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    z-index: 500;
+    width: 100%;
+    height: 40px;
+    background-color: darkgreen;
+
+}
+#tabs-bottom a {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 12px;
+}
+/*ANIMALS MAIN*/
+#main{
+    margin-top: 119px;
+    background:url('images/map-blur.png');
+    background-repeat: repeat-y;
+
+}
+#content{
+    padding-top:1px ;
+    padding-bottom: 50px;
+
+}
+/*infobox*/
+.info-box {
+    background: rgba(255, 255, 255, 0.95);
+    width: 90%;
+    max-width: 600px;
+    margin: 12px auto;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.02);
+}
+
+.info-box img.left {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-box img.right {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    margin-left: auto;
+}
+
+.info-box-content {
+    flex: 1;
+}
+
+.info-box-content h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #572800;
+}
+
+.info-box-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+/*info box full*/
+.info-box-full{
+    background: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 10px;
+    
+}
+.info-box-full img{
+    width: 100%;}
+
+.info-box-full h3{
+    text-align: center;}
+/* Center temperature and weather icon */
+.info-box-full h1.info-box-weather-icon {
+    font-size: 48px;
+    text-align: center;
+    color: #1b4332;
+    margin: 15px 0;
+}
+
+.info-box-full p {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.info-box-weather-icon img {
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Forecast Table Styling */
+.info-box-full table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 15px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-box-full th,
+.info-box-full td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.info-box-full th {
+    background-color: #40916c;
+    color: white;
+    font-weight: bold;
+}
+
+.info-box-full tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.current-weather img {
+    height: 60px;
+    width: 60px;
+}
+
+.current-weather h1 {
+    margin: 0;
+    font-size: 40px;
+    color: #1b4332;
+}
+
+.current-weather p {
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: left;
+}
+/* Form  info-box-full */
+.info-box-full form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.info-box-full label {
+    font-weight: bold;
+    color: #1b4332;
+    font-size: 14px;
+}
+
+.info-box-full input[type="text"],
+.info-box-full input[type="email"],
+.info-box-full textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.info-box-full textarea {
+    min-height: 100px;
+}
+
+.form-button {
+    padding: 12px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #1b4332;
+}
+/* Thank You Message Styling */
+.thank-you-message {
+    text-align: center;
+    padding: 20px;
+    background: rgba(240, 255, 244, 0.95);
+    border: 2px solid #2d6a4f;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+
+
+.thank-you-message h3 {
+    font-size: 28px;
+    color: #1b4332;
+    margin-bottom: 10px;
+}
+
+.thank-you-message p {
+    font-size: 16px;
+    color: #333;
+    margin: 8px 0;
+}
